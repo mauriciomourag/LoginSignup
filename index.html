@@ -1,0 +1,55 @@
+<hmtl>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title>Login</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<section>
+			<div class="container">
+				<div class="user singinBx">
+					<div class="imgBx">
+						<img src="netuno.jpg">
+					</div>
+					<div class="formBx">
+						<form>
+							<h2>Entrar</h2>
+							<input type="text" name="" placeholder="Login">
+							<input type="password" name="" placeholder="Senha">
+							<input type="submit" name="" value="Login">
+							<p class="signup"> Ainda não tem conta? <a href="#" 
+							onclick="toggleForm();">Cadastrar</a></p>
+						</form>
+					</div>
+				</div>
+
+				<div class="user signupBx">
+					<div class="formBx">
+						<form>
+							<h2>Criar Conta</h2>
+							<input type="text" name="" placeholder="Login">
+							<input type="email" name="" placeholder="Email">
+							<input type="password" name="" placeholder="Criar Senha">
+							<input type="password" name="" placeholder="Confirmar Senha">
+							<input type="submit" name="" value="Cadastrar" id="submit-signup">
+							<p class="signup"> Já possui uma conta? <a href="#" id="a-submit" onclick="toggleForm();">Entrar</a></p>
+						</form>
+					</div>
+					<div class="imgBx">
+						<img src="marte.jpg">
+					</div>
+				</div>
+
+			</div>;
+		</section>
+		<script type="text/javascript">
+			function toggleForm(){
+				var container = document.querySelector(".container");
+				container.classList.toggle('active')
+			}
+		</script>
+	</body>
+</hmtl>
